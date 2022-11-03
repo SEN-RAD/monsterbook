@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/monsterbook/static/css/main.5d0ec3bd.css",
+    "main.js": "/monsterbook/static/js/main.762fb490.js",
+    "index.html": "/monsterbook/index.html",
+    "main.5d0ec3bd.css.map": "/monsterbook/static/css/main.5d0ec3bd.css.map",
+    "main.762fb490.js.map": "/monsterbook/static/js/main.762fb490.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0ec3bd.css",
+    "static/js/main.762fb490.js"
+  ]
+}
