@@ -13,7 +13,7 @@ class App extends Component {
 
 
     componentDidMount(){
-      fetch('https://dummyjson.com/users?limit=20')
+      fetch('https://dummyjson.com/users?limit=15')
         .then(response => response.json())
         .then(json => json.users.forEach(u => usersArr.push(u)))
         .then(data=> this.setState({ data: data }));
@@ -37,7 +37,6 @@ class App extends Component {
             </button>
             {this.state.visible ?
               <div>
-                <h2> Click on a card to see more information about the monster </h2>
                 <CardList usersArr={ usersArr }/>
               </div>
             : null}

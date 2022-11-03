@@ -16,9 +16,12 @@ render(){
 
 	return (
 	<div 
-		className= 'tc bg-lightest-blue dib br3 pa3 ma2 grow bw2 shadow-5'
-		onClick={()=>{
-			this.setState({ visible: !this.state.visible });
+		className= 'tc bg-lightest-blue dib br3 pa2 ma4 bw2 shadow-5'
+		onMouseEnter={()=>{
+			this.setState({ visible: true });
+		}}
+		onMouseLeave={()=>{
+			this.setState({ visible: false });
 		}}
 	>
 			<img 
