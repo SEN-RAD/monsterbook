@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import CardList from './Components/CardList';
 import './App.css';
+import { usersArr } from './model';
 
-export default function App() {
+const App: React.FC = () => {
 
-  const [data, setData] = useState([]);
-  const [visible, setVisible] = useState(true)
+  const [data, setData] = useState<usersArr[]>([]);
+  const [visible, setVisible] = useState<boolean>(true)
   const buttonText = visible ? 'Hide monsters' : 'Show monsters';
 
   useEffect(() => {
@@ -26,3 +27,5 @@ export default function App() {
   );
 
 }
+
+export default App;

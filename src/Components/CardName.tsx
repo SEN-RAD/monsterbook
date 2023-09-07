@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './CardName.css';
 import CardInfo from './CardInfo';
 
-
-export default function CardName({ email, age, gender, phone, id, firstName, lastName }) {
+interface Props {
+	email: string;
+	age: number;
+	gender: string;
+	phone: number;
+	id: number;
+	firstName: string;
+	lastName: string;
+  }
+  
+ const CardName: React.FC<Props> = ({ email, age, gender, phone, id, firstName, lastName }) => {
 
 	const [visible, setVisible] = useState(false);
 
@@ -35,3 +44,5 @@ export default function CardName({ email, age, gender, phone, id, firstName, las
 		</div>
 	);
 }
+
+export default CardName;

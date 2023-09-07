@@ -1,8 +1,12 @@
 import React from 'react';
 import CardName from './CardName';
+import { usersArr } from '../model';
 
-export default function CardList({ usersArr }) {
+interface Props {
+  usersArr: usersArr[];
+}
 
+const CardList: React.FC<Props> = ({ usersArr })=> {
   return (
     <div className='flex flex-wrap justify-between'>
       {usersArr.map((user) => {
@@ -24,6 +28,7 @@ export default function CardList({ usersArr }) {
   );
 }
 
+export default CardList;
 
 
 
