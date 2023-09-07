@@ -11,6 +11,7 @@ It's a contacts book that fetches user data from DummyJSON.com and displays them
 * How to build a React app from scratch.
 * How to use event handlers like onMouseEnter, onMouseLeave, and onClick.
 * How to work with functional components and React hooks (useState, useEffect) to change state and fetch data.
+* How to migrate from JSX to TS. 
 
 ### Room for Improvement
 
